@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "argo-test-app.fullname" . }}
+  name: argo-test-app1
 spec:
   selector:
     matchLabels:
