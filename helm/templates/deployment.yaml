@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: argo-test-app1
-          image: szefoka/argo-test-app1
+          image: szefoka/argo-test-app1:latest
           ports:
             - name: http
               containerPort: 5000
