@@ -7,8 +7,8 @@ on:
   workflow_dispatch:
 
 env:
-  DOCKERHUB_USERNAME: ${{ secrets.secrets.DOCKER_USERNAME }}
-  DOCKERHUB_KEY: ${{ secrets.secrets.DOCKER_KEY }}
+  DOCKERHUB_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+  DOCKERHUB_KEY: ${{ secrets.DOCKER_KEY }}
   IMAGE_NAME: argo-test-app1
 
 jobs:
