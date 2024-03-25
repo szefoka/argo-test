@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "argo-test-app.fullname" . }}
+spec:
+  selector:
+    matchLabels:
+      app: argo-test-app1
+  template:
+    spec:
+      containers:
+        - name: argo-test-app1
+          image: szefoka/argo-test-app1
+          ports:
+            - name: http
+              containerPort: 5000
+              protocol: TCP
